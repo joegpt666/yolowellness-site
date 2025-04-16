@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
+
+
 <body>
     <!--[if lte IE 9]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -211,46 +213,47 @@
     <!--====== ABOUT PART START ======-->
     <section class="about-section pt-115 pb-115">
         <div class="container">
-            <div class="video-wrap video-wrap-two video-about mb-60"
+            <!-- <div class="video-wrap video-wrap-two video-about mb-60"
                 style="background-image: url(assets/img/text-block/04.jpg);">
-                <!-- <a href="https://www.youtube.com/watch?v=EEJFMdfraVY" class="popup-video"><i
-                        class="fas fa-play"></i></a> -->
-            </div>
+            </div> -->
             <div class="section-title about-title text-center">
                 <span class="title-tag">since <span>2017</span></span>
                 <h2>Stay slow. Stay soulful. Stay YOLO.</h2>
             </div>
             <ul class="about-features">
                 <li class="wow fadeInUp" data-wow-delay=".3s">
-                    <a href="#">
+                    <a href="#breakfast-popup" class="popup-image">
                         <i class="flaticon-coffee"></i>
                         <i class="hover-icon flaticon-coffee"></i>
                         <span class="title">breakfast</span>
                     </a>
                 </li>
+                
                 <li class="wow fadeInUp" data-wow-delay=".4s">
-                    <a href="#">
+                    <a href="#airport-popup" class="popup-image">
                         <i class="flaticon-air-freight"></i>
                         <i class="hover-icon flaticon-air-freight"></i>
                         <span class="title">Airport Pickup</span>
                     </a>
                 </li>
+                
                 <li class="wow fadeInUp" data-wow-delay=".5s">
-                    <a href="#">
+                    <a href="assets/pdf/city-guide.pdf" target="_blank">
                         <i class="flaticon-marker"></i>
                         <i class="hover-icon flaticon-marker"></i>
                         <span class="title">city guide</span>
                     </a>
                 </li>
+                
                 <li class="wow fadeInUp" data-wow-delay=".6s">
-                    <a href="#">
+                    <a href="#breakfast-popup" class="popup-image">
                         <i class="flaticon-barbecue"></i>
                         <i class="hover-icon flaticon-barbecue"></i>
                         <span class="title">HAPPY MEAL</span>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay=".7s">
-                    <a href="#">
+                    <a href="room-list.html">
                         <i class="flaticon-hotel"></i>
                         <i class="hover-icon flaticon-hotel"></i>
                         <span class="title">luxury room</span>
@@ -300,7 +303,7 @@
                         <div class="icon">
                             <i class="flaticon-rating"></i>
                         </div>
-                        <h3><a href="#">Core Features</a></h3>
+                        <h3><a>Core Features</a></h3>
                         <p>
                             At Our Hotel, every corner whispers comfort, every detail speaks of care. Discover the essentials that make your stay effortless—and unforgettable.
                         </p>
@@ -312,7 +315,7 @@
                         <div class="icon">
                             <i class="flaticon-clock"></i>
                         </div>
-                        <h3><a href="#">Quiet Hours</a></h3>
+                        <h3><a>Quiet Hours</a></h3>
                         <p>
                             Step into calm. Whether it’s a breezy afternoon nap or a quiet night’s sleep, our peaceful setting is made for true rest—soft, still, and soothing by design.
                         </p>
@@ -324,7 +327,7 @@
                         <div class="icon">
                             <i class="flaticon-location-pin"></i>
                         </div>
-                        <h3><a href="#">Best Locations</a></h3>
+                        <h3><a>Best Locations</a></h3>
                         <p>
                             Just off Sukhumvit, we're 4 minutes from the water taxi and offer a free tuk-tuk to Terminal 21. Local cafés, markets, and hidden Bangkok gems are all around you.
                         </p>
@@ -336,7 +339,7 @@
                         <div class="icon">
                             <i class="flaticon-clock-1"></i>
                         </div>
-                        <h3><a href="#">Free Cancellation</a></h3>
+                        <h3><a>Free Cancellation</a></h3>
                         <p>
                             Plans change—we get it. Our flexible cancellation policy gives you peace of mind for those unexpected twists in your journey.
                         </p>
@@ -348,7 +351,7 @@
                         <div class="icon">
                             <i class="flaticon-credit-card"></i>
                         </div>
-                        <h3><a href="#">Payment Options</a></h3>
+                        <h3><a>Payment Options</a></h3>
                         <p>
                             We accept credit cards, Apple Pay, Alipay, and more. Just effortless arrivals and departures, just the way modern travel should feel.
                         </p>
@@ -360,7 +363,7 @@
                         <div class="icon">
                             <i class="flaticon-discount"></i>
                         </div>
-                        <h3><a href="#">Exclusive Offers</a></h3>
+                        <h3><a>Exclusive Offers</a></h3>
                         <p>
                             Book directly through our website to enjoy member-only rates, festive packages, and long-stay perks designed just for you.
                         </p>
@@ -550,6 +553,34 @@
     <script src="assets/js/map.js"></script>
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+        <!-- 早餐菜单弹窗内容 -->
+    <!-- Airport Pickup 弹窗内容 -->
+    <div id="airport-popup" class="mfp-hide white-popup" style="text-align: center; position: relative;">
+        <button title="Close (Esc)" type="button" class="mfp-close"
+            style="position: absolute; top: 10px; right: 10px; color: white; font-size: 24px;">×</button>
+        <img src="assets/img/airport-pickup.jpg" alt="Airport Pickup Info"
+            style="width: 70%; max-width: 600px; border-radius: 8px; margin-top: 20px;" />
+    </div>
+     
+    <!-- 早餐菜单弹窗内容 -->
+    <div id="breakfast-popup" class="mfp-hide white-popup" style="text-align: center; position: relative;">
+        <button title="Close (Esc)" type="button" class="mfp-close" style="position: absolute; top: 10px; right: 10px; color: white; font-size: 24px;">×</button>
+        <img src="assets/img/breakfast_menu.jpg" alt="Breakfast Menu" style="width: 70%; max-width: 600px; border-radius: 8px; margin-top: 20px;" />
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-image').magnificPopup({
+                type: 'inline',
+                midClick: true,
+                closeBtnInside: true,
+                removalDelay: 300,
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
+    
 </body>
 
 </html>

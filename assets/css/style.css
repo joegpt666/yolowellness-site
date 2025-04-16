@@ -9468,3 +9468,18 @@ header nav ul li a,
 .slick-next {
   right: 10px;
 }
+.centered-tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  padding: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* ✨ 阴影来了！ */
+}
