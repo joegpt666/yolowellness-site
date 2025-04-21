@@ -981,6 +981,27 @@ You’re not just staying — you’re arriving.
         </a>
         <span class="close-wa-strip" onclick="document.getElementById('wa-strip').style.display='none';">×</span>
       </div>
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="mfp-hide white-popup" style="text-align: center; padding: 0;">
+        <img src="assets/img/welcome.jpg" alt="Welcome"
+            style="width: 90vw; max-width: 600px; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" />
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+        $.magnificPopup.open({
+            items: {
+            src: '#welcomeModal'
+            },
+            type: 'inline',
+            closeBtnInside: true,
+            removalDelay: 300,
+            mainClass: 'mfp-fade'
+        });
+        });
+    </script>
+  
+  
         
 </body>
 
