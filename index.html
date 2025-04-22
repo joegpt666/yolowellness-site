@@ -948,9 +948,11 @@ You’re not just staying — you’re arriving.
             const outDate = new Date(checkOut);
             const los = Math.max(1, Math.round((outDate - inDate) / (1000 * 60 * 60 * 24)));
         
-            const url = `https://www.agoda.com/zh-hk/yolo-bangkok-boutique-hotel/hotel/bangkok-th.html?` +
-                `locale=zh-hk&currencyCode=SGD&priceCur=SGD&textToSearch=%E6%9B%BC%E8%B0%B7YOLO%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97` +
-                `&checkIn=${checkIn}&checkOut=${checkOut}&adults=${guests}&rooms=1&childs=0&los=${los}&travellerType=1&familyMode=off`;
+            const url = `https://www.booking.com/hotel/th/yolo-bangkok-hostel.en-gb.html?` +
+    `checkin=${checkIn}&checkout=${checkOut}&group_adults=${guests}&group_children=0&no_rooms=1&` +
+    `dest_id=4107652&dest_type=hotel&highlighted_blocks=410765202_0_2_0_0&room1=A%2CA&` +
+    `sb_price_type=total&sr_order=popularity`;
+
         
             window.open(url, "_blank");
         });
