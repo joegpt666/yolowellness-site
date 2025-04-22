@@ -9483,3 +9483,119 @@ header nav ul li a,
   pointer-events: none;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* ✨ 阴影来了！ */
 }
+@keyframes pulse-breath {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.whatsapp-cta {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366; /* 更深绿更稳重 */
+    color: white;
+    padding: 12px 20px 12px 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 9999;
+    text-decoration: none;
+    animation: pulse-breath 2s infinite ease-in-out;
+    transition: background-color 0.3s;
+}
+.whatsapp-cta i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.whatsapp-cta:hover {
+    background-color: #0d5d47;
+}
+@media (max-width: 768px) {
+    .whatsapp-cta span {
+        display: none;
+    }
+    .whatsapp-cta {
+        border-radius: 50%;
+        padding: 14px;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+    }
+}
+.custom-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.custom-close:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mfp-content .mfp-close {
+  position: absolute !important;
+  top: 20px !important;
+  right: 30px !important;
+  width: 36px !important;
+  height: 36px !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  color: #333 !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  z-index: 9999 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.mfp-content .mfp-close:hover {
+  background-color: #f0f0f0 !important;
+  color: black !important;
+  transform: scale(1.05) !important;
+}
+@keyframes soft-gold-shimmer {
+  0%, 100% {
+    color: #bead8e;
+    text-shadow: 0 0 2px rgba(190, 173, 142, 0.4);
+  }
+  50% {
+    color: #d6c7a4;
+    text-shadow: 0 0 6px rgba(190, 173, 142, 0.6);
+  }
+}
+
+.book-btn.soft-gold {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: #bead8e;
+  text-decoration: none;
+  animation: soft-gold-shimmer 2.5s infinite ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.book-btn.soft-gold:hover {
+  color: #e5d6b8;
+  text-shadow: 0 0 8px rgba(190, 173, 142, 0.4);
+}
+
+
+
