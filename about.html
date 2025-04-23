@@ -33,6 +33,22 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
+<script>
+    $(document).ready(function () {
+        $('.counter').one('inview', function (event, isInView) {
+            if (isInView) {
+                $(this).countTo({
+                    from: 0,
+                    to: $(this).text(),
+                    speed: 2000,
+                    refreshInterval: 50
+                });
+            }
+        });
+    });
+    </script>
+    
+    
 
 
 <body>
@@ -389,7 +405,8 @@
                         <div class="icon">
                             <i class="flaticon-user-1"></i>
                         </div>
-                        <h4><span class="counter">25000</span></h4>
+                        <!-- <h4><span class="counter">25000</span></h4> -->
+                        <h4>25000</h4>
                         <span class="title">Happy Users</span>
                     </div>
                 </div>
@@ -398,7 +415,8 @@
                         <div class="icon">
                             <i class="flaticon-like"></i>
                         </div>
-                        <h4><span class="counter">1500</span></h4>
+                        <!-- <h4><span class="counter">1500</span></h4> -->
+                        <h4>1500</h4>
                         <span class="title">Reviews & Appriciate</span>
                     </div>
                 </div>
@@ -407,7 +425,8 @@
                         <div class="icon">
                             <i class="flaticon-suitcase"></i>
                         </div>
-                        <h4><span class="counter">35</span></h4>
+                        <!-- <h4><span class="counter">35</span></h4> -->
+                        <h4>35</h4>
                         <span class="title">Countries of Visitors</span>
                     </div>
                 </div>
