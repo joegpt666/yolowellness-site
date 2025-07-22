@@ -921,6 +921,44 @@ You’re not just staying — you’re arriving.
             const rawArrival = document.getElementById("arrival-date").value;
             const rawDeparture = document.getElementById("departure-date").value;
             const guests = document.getElementById("guests").value || "1";
+
+            if (!rawArrival || !rawDeparture) {
+                alert("Please select both arrival and departure dates.");
+                return;
+            }
+
+            function parseDateDMY(dateStr) {
+                const parts = dateStr.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+                if (!parts) return null;
+                const day = parts[1].padStart(2, '0');
+                const month = parts[2].padStart(2, '0');
+                const year = parts[3];
+                return `${year}-${month}-${day}`;
+            }
+
+            const checkIn = parseDateDMY(rawArrival);
+            const checkOut = parseDateDMY(rawDeparture);
+
+            if (!checkIn || !checkOut) {
+                alert("日期格式错误，请重新选择。");
+                return;
+            }
+
+            const url = `https://book-directonline.com/properties/YOLOBangkokBoutiqueHoteDIRECT?locale=en` +
+                `&items[0][adults]=${guests}` +
+                `&items[0][children]=0&items[0][infants]=0` +
+                `&currency=THB` +
+                `&checkInDate=${checkIn}&checkOutDate=${checkOut}` +
+                `&trackPage=yes`;
+
+            window.open(url, "_blank");
+        });
+    </script>
+    <!-- <script>
+        document.getElementById("checkBtn").addEventListener("click", function () {
+            const rawArrival = document.getElementById("arrival-date").value;
+            const rawDeparture = document.getElementById("departure-date").value;
+            const guests = document.getElementById("guests").value || "1";
         
             if (!rawArrival || !rawDeparture) {
                 alert("Please select both arrival and departure dates.");
@@ -957,7 +995,7 @@ You’re not just staying — you’re arriving.
         
             window.open(url, "_blank");
         });
-        </script>
+        </script> -->
         
         <!-- <a href="https://wa.me/66830823148?text=Hi%20YOLO%20Hotel%2C%20I'd%20like%20to%20book%20a%20room!"
         class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
