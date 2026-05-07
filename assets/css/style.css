@@ -9646,3 +9646,168 @@ header nav ul li a,
   }
 }
 
+/* —— Toyoko 克隆区：只作用于 .toyoko-wrap —— */
+.toyoko-wrap .campaign_campaign-list__AN_bS {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+}
+@media (max-width: 992px) {
+  .toyoko-wrap .campaign_campaign-list__AN_bS { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .toyoko-wrap .campaign_campaign-list__AN_bS { grid-template-columns: 1fr; }
+}
+
+.toyoko-wrap .campaign_campaign-list__AN_bS li { margin: 0; }
+
+.toyoko-wrap .CardPickup_card-component__yE1kt {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  height: 100%;
+}
+.toyoko-wrap .CardPickup_card-component__yE1kt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+.toyoko-wrap .CardPickup_link__VwKIT {
+  display: flex; flex-direction: column; height: 100%;
+  text-decoration: none; color: inherit;
+}
+
+.toyoko-wrap .CardPickup_img-block__8YkEC {
+  position: relative;
+  aspect-ratio: 3 / 2;           /* 保持图片比例 */
+  background: #f4f4f4;
+}
+.toyoko-wrap .CardPickup_img-block__8YkEC img {
+  width: 100%; height: 100%; object-fit: cover;
+  position: static !important;   /* 覆盖 Next.js 的绝对定位 */
+}
+
+.toyoko-wrap .CardPickup_text, 
+.toyoko-wrap .CardPickup_text-block__inner { /* 兜底命名，适配不同导出类名 */
+  padding: 16px 18px 18px;
+}
+
+.toyoko-wrap .toy-title { font-size: 18px; font-weight: 600; line-height: 1.3; margin: 0 0 6px; }
+.toyoko-wrap .toy-desc  { font-size: 14px; color: #666; margin: 0; }
+
+/* ===== Breakfast Section ===== */
+
+.breakfast-section {
+    position: relative;
+    color: #f5f5f5;
+}
+
+.breakfast-text .title-tag {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 12px;
+    color: #c8a889;
+}
+
+.breakfast-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.breakfast-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    margin-bottom: 20px;
+    color: #e0d4c6;
+}
+
+.breakfast-body {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.breakfast-note {
+    font-size: 13px;
+    color: #b8b8b8;
+    margin-top: 10px;
+}
+
+.breakfast-slider-wrap {
+    position: relative;
+}
+
+.breakfast-slider {
+    /* slick 会做具体宽度控制 */
+}
+
+.breakfast-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.breakfast-img {
+    width: 100%;
+    height: 380px;
+    border-radius: 22px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* 覆盖文案，右下角一条，很“酒店” */
+.breakfast-overlay-copy {
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
+    max-width: 260px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #f5f2ed;
+    background: rgba(12, 12, 12, 0.72);
+    padding: 10px 14px;
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* 隐藏 slick 的 dots 和 arrows */
+.breakfast-slider .slick-dots,
+.breakfast-slider .slick-arrow {
+    display: none !important;
+}
+
+
+/* 移动端优化 */
+@media (max-width: 991.98px) {
+    .breakfast-section {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .breakfast-img {
+        height: 260px;
+    }
+
+    .breakfast-overlay-copy {
+        position: static;
+        margin-top: 12px;
+        border-radius: 16px;
+    }
+
+    .breakfast-title {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+}
