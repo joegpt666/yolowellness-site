@@ -8,7 +8,9 @@
         '.story-copy', '.people-photo', '.people-copy', '.values-grid article',
         '.split-feature > *', '.gallery-feature > *', '.gallery-item',
         '.contact-overview article', '.contact-copy', '.contact-form',
-        '.room-detail-card', '.rooms-booking-panel', '.map-section'
+        '.room-detail-card', '.rooms-booking-panel', '.map-section',
+        '.life-heading', '.life-scene', '.neighborhood-copy', '.neighborhood-photo',
+        '.house-scenes > figure'
     ].join(', '));
     let observer;
 
