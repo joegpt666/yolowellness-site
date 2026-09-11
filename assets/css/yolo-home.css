@@ -24,8 +24,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.2; }
 .skip-link { position: fixed; z-index: 50; top: 10px; left: 10px; padding: 12px 20px; background: white; transform: translateY(-150%); }
 .skip-link:focus { transform: translateY(0); }
 .cover { position: relative; height: calc(100svh - 158px); min-height: 430px; max-height: 860px; }
-.cover-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 56%; }
-.cover-title { position: absolute; left: 48px; top: 36px; color: #202521; }
+.cover-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+.cover-title { position: absolute; left: 48px; top: 36px; color: #fff; text-shadow: 0 2px 12px #0009; }
 .cover-title h1 { font-size: 68px; font-weight: 500; line-height: .96; }
 .cover-title h1 span { display: block; font-size: 30px; line-height: 1.6; text-transform: uppercase; }
 .cover-title p { font-size: 14px; margin-top: 4px; }
@@ -152,7 +152,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.2; }
 }
 @media (max-width: 480px) {
     :root { --gap: 10px; }
-    .cover-photo { object-position: 57% center; }
+    .cover-photo { object-position: 66% center; }
     .cover-title h1 { font-size: 50px; }
     .cover-title h1 span { font-size: 23px; }
     .cover-title p { font-size: 13px; max-width: 110px; }
